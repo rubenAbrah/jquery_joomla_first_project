@@ -1,4 +1,4 @@
-// db 
+// db.sql
 INSERT INTO `search_table` (`id`, `value`, `prop1`, `prop2`) VALUES  
 (NULL, 'val1', 'prop1', 'prop1'),
 (NULL, 'val2', 'prop2', 'prop2'),
