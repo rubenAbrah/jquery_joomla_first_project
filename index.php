@@ -62,7 +62,7 @@ if (isset($_GET['queryItem'])) {
                 </div>
             </div>
             <script>
-                window.onload = function() {
+         window.onload = function() {
                     $("form").on("submit", function(event) {
                         event.preventDefault();
                         let data = $(this).serialize()
@@ -88,8 +88,10 @@ if (isset($_GET['queryItem'])) {
                             }
                         });
                     })
-                    $('.modalWrapper').on('click', function() {
-                        $('.modalWrapper').hide()
+                    $('.modalWrapper').on('click', function(event) {
+                        if (event.target == this) {
+                            $('.modalWrapper').hide()
+                        }
                     })
 
                 };
